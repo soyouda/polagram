@@ -106,5 +106,9 @@ dist
 # MACOS
 .DS_Store
 
+# Prisma
+prisma.yml
+generated
+
 # Prisma demo folder
 hello-world
