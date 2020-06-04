@@ -105,3 +105,6 @@ dist
 
 # MACOS
 .DS_Store
+
+# Prisma demo folder
+hello-world
