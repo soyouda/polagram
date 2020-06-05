@@ -5,6 +5,7 @@ dotenv.config({ path: path.resolve(__dirname, ".env") });
 import { adjectives, nouns } from "./word";
 import nodemailer from "nodemailer";
 import sgTransport from "nodemailer-sendgrid";
+import jwt from "jsonwebtoken";
 
 export const generateSecret = () => {
   const randomNumber = Math.floor(Math.random() * adjectives.length);
@@ -26,6 +27,8 @@ export const sendSecretMail = (adress, secret) => {
   };
   return transport.sendMail(email);
 };
+
+export const generateToken = (id) => jwt.sign({ id }, process.env.JWT_SECRET);
 
 /**
 const sendMail = (email) => {
