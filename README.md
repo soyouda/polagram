@@ -9,12 +9,12 @@ instagram clone with Express + Prisma + React and React Native
 - [x] Confirm Secret (Log in)
 - [x] Like / Unlike a photo
 - [x] Comment on a photo
-- [ ] Search by user
-- [ ] Search by location
-- [ ] See user profile
-- [ ] Follow / Unfollow User
-- [ ] See the full photo
+- [x] Search by user
+- [x] Search by location
+- [x] Follow / Unfollow User
 - [ ] Edit my profile
+- [ ] See user profile
+- [ ] See the full photo
 - [ ] Upload a photo
 - [ ] Edit the photo (Delete)
 - [ ] See the feed
