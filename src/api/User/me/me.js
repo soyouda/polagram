@@ -7,10 +7,13 @@ export default {
       const { user } = request;
       const userProfile = await prisma.user({ id: user.id });
       const posts = await prisma.user({ id: user.id }).posts();
+      return userProfile;
+      /*
       return {
         user: userProfile,
         posts
       };
+      */
     }
   }
 };
