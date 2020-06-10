@@ -19,7 +19,7 @@ export const sendSecretMail = (adress, secret) => {
     from: "soyouda@gmail.com",
     to: adress,
     subject: "🔒Polagram에서 보낸 인증 메일 입니다.🔒",
-    html: `안녕하세요 ! 인증 문자를 안내해드립니다 : <strong>${secret}</strong>.<br/> 어플/웹사이트에 복사 붙여넣기 하세요.`
+    html: `안녕하세요 ! 인증 문자를 안내해드립니다 : <strong>${secret}</strong><br/> 어플/웹사이트에 복사 붙여넣기 하세요.`
   };
   return transport.sendMail(email);
 };
